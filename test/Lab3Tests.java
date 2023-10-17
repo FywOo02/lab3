@@ -90,4 +90,16 @@ class Lab3Tests {
 		L1.sort(null);
 		assertEquals(L1, L2);
 	}
+
+	@Test
+	void testdiv() throws Exception{
+		RationalNumber r1 = new RationalNumber(1,2);
+		RationalNumber r2 = new RationalNumber(2,4);
+		assertEquals(r1.divideByInt(9), new RationalNumber(1,18));
+	}
+	@Test
+	void testdivComplex() throws Exception{
+		ComplexNumber r1 = new ComplexNumber(3,2);
+		assertEquals(r1.divideByInt(2), new ComplexNumber(1.5,1));
+	}
 }
